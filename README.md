@@ -1,6 +1,6 @@
 # Developed Markets Equity Scorecard
 
-A systematic framework for ranking five developed equity markets — **US, Eurozone, UK, Switzerland, Japan** — on relative 3–6 month performance, built around four independently-tested signal pillars.
+A systematic framework for ranking five developed equity markets - **US, Eurozone, UK, Switzerland, Japan** - on relative 3–6 month performance, built around four independently-tested signal pillars.
 
 Methodology informed by published S&P Global and MSCI scorecard/factor-index research.
 
@@ -24,7 +24,7 @@ Methodology informed by published S&P Global and MSCI scorecard/factor-index res
 | **Valuation** | P/E Reversal | −(6-month P/E change), cross-sectional z-score | Captures whether a market's multiple is cheapening or richening |
 | **Technical** | Risk-Adjusted Momentum | 6-month price momentum ÷ 12-month realized volatility | Captures trailing price trend, adjusted for volatility |
 
-Each signal is standardized **cross-sectionally** — every month, a country's raw value is converted to a z-score relative to the other four markets that same month — so all four pillars are directly comparable before combining.
+Each signal is standardized **cross-sectionally** — every month, a country's raw value is converted to a z-score relative to the other four markets that same month - so all four pillars are directly comparable before combining.
 
 ---
 
@@ -91,24 +91,14 @@ A long-only portfolio (equal-weight base, tilted by composite score via a bounde
 
 ---
 
-## Repository Structure
 
-```
-├── 01_Developed_Markets_Equity_Scorecard.ipynb   # Full notebook: data prep → signals → scorecard → backtest
-├── common_data.xlsx                              # Synchronized macro data, 245 common dates
-├── {country}_common_with_price.csv               # Per-country macro + price panel
-├── final_scorecard_panel.csv                     # Scorecard output: pillar scores, composite, rank
-├── pillar_backtest_results.csv                   # Signal-level IC/significance results
-├── backtest_equity_curve_and_drawdown.csv         # Portfolio simulation output
-└── Developed_Markets_Equity_Scorecard.pptx        # 5-slide summary deck
-```
 
 ---
 
 ## Data Sources
 
 - **Macro/fundamental data:** Bloomberg (PMI, EPS, forward P/E, 2Y yields)
-- **Price data:** Yahoo Finance — S&P 500 (US), EWJ (Japan), EZU (Eurozone), EWU (UK), EWL (Switzerland); USD price returns, dividends excluded
+- **Price data:** Yahoo Finance - S&P 500 (US), EWJ (Japan), EZU (Eurozone), EWU (UK), EWL (Switzerland); USD price returns, dividends excluded
 
 ---
 
